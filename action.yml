@@ -8,8 +8,9 @@ inputs:
     default: World
 
 outputs:
-  time:
-    description: The time we greeted you
+  random-number:
+    description: "Random number"
+    value: ${{ steps.random-number-generator.outputs.random-number }}
 
 runs:
   using: composite
