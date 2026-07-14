@@ -19,4 +19,7 @@ runs:
       shell: bash
       env:
         INPUT_WHO_TO_GREET: ${{ inputs.who-to-greet }}
+    - name: Run shell script
+      run: goodbye.sh
+      shell: bash
     
